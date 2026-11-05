@@ -25,19 +25,16 @@
 @font-face{font-family:"YJ-JP";src:local("PA1GothicStdN-Medium"),local("A P-OTF A1ゴシック StdN M");font-weight:100 900;unicode-range:U+3000-30FF,U+3400-4DBF,U+4E00-9FFF,U+FF00-FFEF}
 /* Layout: record-shop crate index. Masthead + sticky search, then a sleeve grid; search flips the grid into a track ledger. */
 :root{
-  --bg:#E8EEEC; --surface:#F7F9F8; --ink:#0F1F1F; --muted:#56696A; --line:#C7D3D1;
-  --accent:#1F6A73; --accent-ink:#F2F7F6; --tone2:#173A3E; --tone3:#8C6420; --tone4:#4F8C8F; --mark:#CFE4E3; --brass:#8C6420;
+/* always dark: the site keeps one look whatever the phone setting */
+  --bg:#0B1414; --surface:#122020; --ink:#E1ECEA; --muted:#8CA19F; --line:#233534;
+  --accent:#6CB9BD; --accent-ink:#0B1414; --tone2:#2E6A6E; --tone3:#C49A50; --tone4:#9CCFD1; --mark:#1D4446; --brass:#D4A85C;
+  color-scheme:dark;
   --f-display:"Big Shoulders Display","YJ-JP","Zen Kaku Gothic New","Arial Narrow",Impact,sans-serif;
   --f-body:"IBM Plex Sans KR","YJ-JP","Zen Kaku Gothic New","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
   --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
   --radius:4px;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#0B1414; --surface:#122020; --ink:#E1ECEA; --muted:#8CA19F; --line:#233534;
-  --accent:#6CB9BD; --accent-ink:#0B1414; --tone2:#2E6A6E; --tone3:#C49A50; --tone4:#9CCFD1; --mark:#1D4446; --brass:#D4A85C; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0B1414; --surface:#122020; --ink:#E1ECEA; --muted:#8CA19F; --line:#233534;
-  --accent:#6CB9BD; --accent-ink:#0B1414; --tone2:#2E6A6E; --tone3:#C49A50; --tone4:#9CCFD1; --mark:#1D4446; --brass:#D4A85C; color-scheme:dark}
+
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
